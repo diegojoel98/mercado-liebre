@@ -1,0 +1,381 @@
+/* Estilos generales */
+*{   
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+a:visited {
+    color: #1259c3;
+}
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 10px;
+}
+
+/* Navbar */
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    margin: auto;
+    max-width: 45px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 12px 0;
+}
+
+.logo {
+    width: 200px;
+}
+
+/* Main */
+.text-header {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+input[type=search], .i-search {
+    display: none;
+}
+
+nav ul, .nav {
+    display: none;
+}
+
+div.last-visit, div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount, .description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3, .description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+/* Ejercitación diseño adaptativo */
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.main-navbar ul a {
+    padding: 5px 0;
+}
+
+
+/* Practica formularios */
+#register-form, #login-form {
+    padding: 15px 0px;
+}
+
+#register-form div, #login-form div {
+    padding: 5px;
+}
+
+#register-form label, #login-form label {
+    font-weight: 600;
+}
+
+#register-form input, #login-form input {
+    border: none;
+    padding: 12px;
+    border-radius: 3px;
+    margin: 9px 0;
+}
+
+#register-form input[type="radio"], #register-form input[type="checkbox"] {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#register-form input[type="text"], #register-form input[type="password"], #login-form input[type="password"], #login-form input[type="text"] {
+    display: block;
+    width: 100%;
+}
+
+#register-form input[type="file"] {
+    margin-left: -15px;
+}
+
+#register-form button, #login-form button {
+    background-color: #1259c3;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    margin: 4px;
+    font-weight: 600;
+}
+
+#register-form button, #login-form button {
+    transition: all 1000ms linear;
+}
+
+#register-form button:hover, #login-form button:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+#register-form button:active, #login-form button:active {
+    background-color: #0022AA;
+}
+
+form#register-form input#name:hover {
+    background-color: #39b54a;
+}
+
+
+/* Ejercitación organizando elementos */
+.description {
+    opacity: 0;
+}
+
+.description:hover {
+    opacity: 1;
+}
+
+.main-article i{
+    transition: all 500ms linear;
+}
+
+.main-article i:hover {
+    transform: rotate(-90deg);
+}
+
+/* Footer */
+footer { 
+    background-color: #fff;
+}
+
+.subtitulo {
+    line-height: 0px;
+    margin: 10px 0;
+}
+.subtitulo, footer p, footer div b {
+    text-align: center;
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.icono {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    margin-bottom: 10px;
+}
+
+/* Media queries */
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 98%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    main section div.products article{
+        width: 48%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 32%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    input[type=search], .i-search {
+        display: inline;
+    }
+
+    input[type=search] {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    button[type=submit] {
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+        color: #1259c3;
+    }
+
+    input[type=search]:active {
+        border: 1px solid #7da1d8;
+    }    
+
+    .main-header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .text-header {
+        min-width: 350px;
+        text-align: right;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 7px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .main-header-top, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    main section div.products article{
+        width: 23%;
+    }
+
+    .text-header {
+        max-width: none;
+        font-weight: 500;
+        align-items: center;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px 0;
+        padding: 30px 0;
+    }
+
+    .container i:hover {
+        color: #06208b;
+    }
+
+}
